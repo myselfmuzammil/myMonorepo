@@ -1,0 +1,11 @@
+{
+  "name": "mymonorepo",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pnpm --filter ./apps/** build",
+    "start": "pnpm --filter ./apps/** start",
+    "api": "pnpm --filter @repo/api start",
+    "start:client": "npm start -w packages/client"
+  }
+}
