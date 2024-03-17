@@ -10,6 +10,9 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v4
 
+      - name: install pnpm
+        run: npm install -g pnpm
+
       - name: build
         run: pnpm build
 
