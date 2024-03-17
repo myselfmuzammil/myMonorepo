@@ -4,11 +4,13 @@ jobs:
   build:
     runs-on: "ubuntu-latest"
     steps:
-      - name: install node
-        uses: actions/setup-node@v4
-
       - name: checkout repository
         uses: actions/checkout@v4
+
+      - run: pwd
+
+      - name: install node
+        uses: actions/setup-node@v4
 
       - name: install pnpm
         run: npm install -g pnpm
