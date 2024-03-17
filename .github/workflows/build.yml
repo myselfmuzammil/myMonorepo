@@ -15,6 +15,9 @@ jobs:
       - name: install pnpm
         run: npm install -g pnpm
 
+      - name: install node_modules
+        run: pnpm install
+
       - name: build-project
         run: pnpm build
 
