@@ -1,0 +1,17 @@
+name: build
+on: [push]
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: install node
+        uses: actions/setup-node@v4
+
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: build
+        run: pnpm build
+
+      - name: check
+        run: tree
