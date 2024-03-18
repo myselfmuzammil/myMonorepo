@@ -6,6 +6,6 @@
     "build": "pnpm --filter ./apps/** build",
     "start": "pnpm --filter ./apps/** start",
     "api": "pnpm --filter @repo/api start",
-    "start:client": "npm start -w packages/client"
+    "clean": "git clean -xdf"
   }
 }

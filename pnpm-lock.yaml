@@ -11,7 +11,7 @@ importers:
   apps/api:
     dependencies:
       express:
-        specifier: ^4.18.3
+        specifier: ^4.18.2
         version: 4.18.3
       trpc:
         specifier: '*'
@@ -63,8 +63,6 @@ importers:
       typescript:
         specifier: ^5
         version: 5.4.2
-
-  packages/lodash: {}
 
   packages/trpc:
     dependencies:
@@ -2179,6 +2177,7 @@ packages:
   /mime@1.6.0:
     resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
     engines: {node: '>=4'}
+    hasBin: true
     dev: false
 
   /minimatch@3.1.2:
