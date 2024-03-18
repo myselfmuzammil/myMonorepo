@@ -15,6 +15,6 @@ jobs:
           cache: "pnpm"
       - name: pnpm install, build
         run: |
-          pnpm install
+          pnpm install --frozen-lockfile
           pnpm build
       - run: tree
